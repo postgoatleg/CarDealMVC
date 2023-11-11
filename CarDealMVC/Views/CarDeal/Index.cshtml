@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@* @model IEnumerable<CarDealMVC.Models.Car> *@
+@model HomeViewModel
+@{
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Цвет @* @Html.DisplayNameFor(model => model.Cars.Color) *@
+            </th>
+            <th>
+                Модель @* @Html.DisplayNameFor(model => model.Cars.Model.ModelName) *@
+            </th>
+            <th>
+                Характеристики @* @Html.DisplayNameFor(model => model.Cars.CarsStats) *@
+            </th>
+            <th>
+                Цена @* @Html.DisplayNameFor(model => model.Cars.Price) *@
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Cars)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model.ModelName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CarsStats)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

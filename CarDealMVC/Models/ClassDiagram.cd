@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="CarDealMVC.Models.Car">
+    <Position X="6.75" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAgAAAEAAQAAQCAAAKEAAICAAAEAAEABCAgAgAAQAAA=</HashCode>
+      <FileName>Models\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarDealMVC.Models.CarcaseType">
+    <Position X="10.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAACAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CarcaseType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cars" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CarDealMVC.Models.CarDealerContext">
+    <Position X="0.75" Y="1.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAACAAAAAAAgAIAAAAAgCAAAgAAABAAAAAAQAAA=</HashCode>
+      <FileName>Models\CarDealerContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarDealMVC.Models.CarModel">
+    <Position X="9.75" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Models\CarModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cars" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CarDealMVC.Models.CarsEquipment">
+    <Position X="6.5" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAASgIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CarsEquipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Car" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CarDealMVC.Models.DbInitializer">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DbInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarDealMVC.Models.Employee">
+    <Position X="3.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACAAAAAAAgAGAAAAAAAACAAAAAAAAAAAACAAg=</HashCode>
+      <FileName>Models\Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Position" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cars" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CarDealMVC.Models.ExtraEquipment">
+    <Position X="10" Y="7" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAABAAIAAAAAAAAAAAAAAAAAAAAAQgAA=</HashCode>
+      <FileName>Models\ExtraEquipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CarsEquipments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CarDealMVC.Models.Manufacturer">
+    <Position X="10.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAIAQAsAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Manufacturer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cars" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CarDealMVC.Models.Order">
+    <Position X="4" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>GAAQAAAAAAQAAAAAAAAAAASABAgAAAAAgIAAAAEAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Car" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CarDealMVC.Models.Position">
+    <Position X="3" Y="7.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAACACAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
