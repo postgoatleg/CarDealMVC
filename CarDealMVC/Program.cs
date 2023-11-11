@@ -16,7 +16,6 @@ builder.Services.AddDbContext<CarDealerContext>(options => options.UseSqlServer(
 builder.Services.AddControllersWithViews();
 builder.Services.AddMemoryCache();
 builder.Services.AddDistributedMemoryCache();
-//DbInitializerExtensions.UseDbInitializer(builder);
 builder.Services.AddScoped<ICachedService<Car>, CachedCarsService>();
 builder.Services.AddScoped<ICachedService<Manufacturer>, CachedManufacturersService>();
 builder.Services.AddScoped<ICachedService<Employee>, CachedEmpoyeesService>();
@@ -38,6 +37,10 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "cars",
     pattern: "{controller=CarDeal}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
